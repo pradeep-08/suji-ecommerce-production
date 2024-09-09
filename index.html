@@ -21,6 +21,7 @@
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css"
       media="screen">
    <script src="https://kit.fontawesome.com/26f0a64c16.js" crossorigin="anonymous"></script>
+   <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
 </head>
 <!-- body -->
 
@@ -183,7 +184,7 @@
             <div class="col-md-6">
                <div class="titlepage">
                   <h2>About Us</h2>
-                  <p><b>*Suji Hair and Makeup*</b>offers a range of services to enhance your natural beauty for any
+                  <p><b>Suji Hair and Makeup</b> offers a range of services to enhance your natural beauty for any
                      occasion. From basic to HD, matte, and dewy makeup, we cater to all needs including engagement,
                      reception, and pre-wedding looks. Whether it’s party makeup, bridal makeup, or special events like
                      baby showers and puberty ceremonies, our expert team ensures you look stunning and radiant. Let us
@@ -294,7 +295,7 @@
                   </div>
                </div>
                <div class="col-md-12 align-items-center">
-                  <a class="read_more mar_top exper" href="services.html"> More</a>
+                  <a class="read_more mar_top exper" href="services.html">More</a>
                </div>
             </div>
          </div>
@@ -314,13 +315,17 @@
          </div>
          <div class="row">
             <div class="col-md-6 offset-md-3">
-               <form id="request" class="main_form">
+               <form  action="https://api.web3forms.com/submit" method="POST" id="request" class="main_form">
+                  <input type="hidden" name="access_key" value="6a320d9d-1efa-45d9-9307-885f2424b1ba">
+                  <input type="hidden" name="subject" value="New Request from Client ❗⚠️">
+                  <input type="hidden" name="from_name" value="Client Notification ⚠️">
+                  <input type="hidden" name="replyto" value="custom@gmail.com" />
                   <div class="row">
                      <div class="col-md-12 ">
                         <input class="contactus" placeholder="Full Name" type="type" name="Full Name" required>
                      </div>
                      <div class="col-md-12">
-                        <input class="contactus" placeholder="Email " type="email" name="Email" required>
+                        <input class="contactus" placeholder="Email"  id="to" type="email" name="Email" required>
                      </div>
                      <div class="col-md-12">
                         <input class="contactus" placeholder="Phone Number" type="type" name="Phone Number" required>
@@ -333,10 +338,10 @@
                         <input class="contactus" placeholder="Date" type="date" name="date" >
                      </div>
                      <div class="col-md-12">
-                        <textarea class="textarea" placeholder="Message" type="type" Message="Name"></textarea>
+                        <textarea class="textarea" placeholder="Message" type="type" name="Message"></textarea>
                      </div>
                      <div class="col-md-12">
-                        <button class="send_btn">Send</button>
+                        <button type="submit" onclick="sendMail();" class="send_btn">Send</button>
                      </div>
                   </div>
                </form>
@@ -412,6 +417,51 @@
    </footer>
    <!-- end footer -->
    <!-- Javascript files-->
+   <script>
+          function sendMail(){
+            emailjs.init("ZyL32yxaIoRjdVqPJ");
+         
+
+          var params = {
+            to : document.querySelector("#to").value
+          };
+
+          var serviceID = "service_eozsh7d"; //email service id
+          var templateID = "template_znxkf1m"; 
+         
+          emailjs.send("service_eozsh7d","template_znxkf1m",{
+to: document.querySelector("#to").value,
+});
+}
+      document.addEventListener('DOMContentLoaded', function() {
+       var originalTitle = document.title; // Store the original title
+       
+       function changeTitle(newTitle) {
+         document.title = newTitle; // Change the title
+         setTimeout(function() {
+           document.title = originalTitle; // Revert back to the original title after 3 seconds
+         }, 3000);
+       }
+       
+     
+       document.addEventListener('keydown', function(event) {
+         // Detect print screen key (PrtScn) press
+         if (event.key === 'PrintScreen') {
+            changeTitle('Restricted Page');
+           alert('Screenshots are not allowed on this page.');
+           
+           event.preventDefault(); // Prevent default action
+         }
+       });
+       
+       document.addEventListener('contextmenu', function(event) {
+         // Detect right-click context menu
+         event.preventDefault();
+         changeTitle('Restricted Page'); // Prevent context menu from opening
+         alert('Right-click context menu is disabled on this page.'); 
+       });
+   });
+     </script>
    <script src="js/jquery.min.js"></script>
    <script src="js/bootstrap.bundle.min.js"></script>
    <script src="js/jquery-3.0.0.min.js"></script>
