@@ -26,3 +26,16 @@
     //   alert("Right-click context menu is disabled on this page.");
     // });
   });
+
+  document.addEventListener('DOMContentLoaded', function() {
+    const toggler = document.querySelector('.navbar-toggler');
+    const collapse = document.querySelector('#navbarNav');
+
+    toggler.addEventListener('click', function() {
+        if (collapse.classList.contains('show')) {
+            toggler.classList.add('collapsed');
+        } else {
+            toggler.classList.remove('collapsed');
+        }
+    });
+});
