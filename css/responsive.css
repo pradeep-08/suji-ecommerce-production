@@ -1,8 +1,3 @@
-/*--------------------------------------------------------------------- File Name: responsive.css ---------------------------------------------------------------------*/
-
-
-/*------------------------------------------------------------------- 991px x 768px ---------------------------------------------------------------------*/
-
 @media (min-width: 1200px) and (max-width: 1342px) {
     ul.social_icon li a {
         margin: 0 1px;
@@ -39,15 +34,6 @@
     .we_box i {
         width: 170px;
         height: 170px;
-    }
-    .slin::before {
-        right: 8%;
-    }
-    .slin2::before {
-        left: 4%;
-    }
-    .pricing_box {
-        padding: 74px 71px 80px 71px;
     }
 }
 
@@ -93,18 +79,11 @@
         left: 4%;
         max-width: 690px;
     }
-    .pricing_box {
-        padding: 74px 40px 80px 40px;
-    }
-    .variat {
-        padding-right: 20px;
-    }
+  
     ul.conta li {
         display: block;
     }
-    .pricing_box_ti h3 {
-        font-size: 39px;
-    }
+    
     .footer h3 {
         font-size: 16px;
     }
@@ -145,10 +124,7 @@
     ul.conta li {
         display: block;
     }
-    .slin2::before {
-        left: 2%;
-        max-width: 544px;
-    }
+    
     .navigation.navbar {
         float: right;
         display: inherit !important;
@@ -216,7 +192,7 @@
         height: 417px;
     }
     .relative span {
-        padding-top: 126px;
+        padding-top: 10px;
         display: block;
     }
     .relative h1 {
@@ -230,16 +206,13 @@
         padding-bottom: 90px;
     }
     .banner1 {
-        padding: 50px 0 0px 0;
+        padding: 8px 10px 0px 30px;
     }
     .about .titlepage {
         max-width: inherit;
     }
     .titlepage h2 {
         font-size: 32px;
-    }
-    .pricing_box {
-        padding: 74px 40px 80px 40px;
     }
     .about_img {
         margin-right: 0px;
@@ -250,10 +223,6 @@
     }
     ul.link_menu {
         margin-bottom: 20px;
-    }
-    .slin2::before {
-        left: 0%;
-        max-width: 305px;
     }
     .variat {
         padding-bottom: 20px;
@@ -300,5 +269,15 @@
     }
     .d_none {
         display: none;
+    }
+    .about {
+        padding-top: 25px;
+    }
+    .read_more {
+        margin: 14px 0 0 0;
+    }
+    .titlepage {
+        text-align: center;
+        padding-bottom: 0;
     }
 }

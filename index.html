@@ -1,433 +1,576 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="viewport" content="initial-scale=1, maximum-scale=1" />
+<head>
+   <meta charset="utf-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-    <title>suji</title>
-    <meta name="keywords" content="" />
-    <meta name="description" content="" />
-    <meta name="author" content="" />
-    <link rel="stylesheet" href="css/bootstrap.min.css" />
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/responsive.css" />
-    <link rel="icon" href="new img/images/Logo/Logo2.png" type="image/gif" />
-    <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css" />
-    <link
-      rel="stylesheet"
-      href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css"
-      media="screen"
-    />
-    <script
-      src="https://kit.fontawesome.com/26f0a64c16.js"
-      crossorigin="anonymous"
-    ></script>
-    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
-  </head>
-  <!-- body -->
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <meta name="viewport" content="initial-scale=1, maximum-scale=1">
 
-  <body class="main-layout">
-    <!-- loader  -->
-    <div class="loader_bg">
-      <div class="loader">
-        <img src="new img/images/Loading/loading.gif" alt="#" />
-      </div>
-    </div>
-    <!-- end loader -->
-    <!-- header -->
-    <header>
+   <title>suji</title>
+   <meta name="keywords" content="">
+   <meta name="description" content="">
+   <meta name="author" content="">
+   <link rel="stylesheet" href="css/bootstrap.min.css">
+   <link rel="stylesheet" href="css/style.css">
+   <link rel="stylesheet" href="css/responsive.css">
+   <link rel="icon" href="new img/images/Logo/Logo2.png" type="image/gif" />
+   <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
+   <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css"
+      media="screen">
+   <script src="https://kit.fontawesome.com/26f0a64c16.js" crossorigin="anonymous"></script>
+   <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+</head>
+<!-- body -->
+
+<body class="main-layout">
+   <!-- loader  -->
+   <!-- <div class="loader_bg">
+      <div class="loader"><img src="new img/images/Loading/loading.gif" alt="#" /></div>
+   </div> -->
+   <!-- end loader -->
+   <!-- header -->
+   <header>
       <!-- header inner -->
-      <div class="header">
-        <div class="container-fluid">
-          <div class="row">
-            <div class="col-xl-3 col-lg-3 col-sm-3 col logo_section">
-              <div class="full">
-                <div class="center-desk">
-                  <div class="logo">
-                    <div class="logoi">
-                      <img src="new img/images/Logo/Logo2.png" alt="" />
-                    </div>
-                    <div class="logoname">
-                      <h1>Suji Hair and Makeup</h1>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-xl-7 col-lg-7 col-md-12 col-sm-9">
-              <nav class="navigation navbar navbar-expand-md navbar-dark">
-                <button
-                  class="navbar-toggler"
-                  type="button"
-                  data-toggle="collapse"
-                  data-target="#navbarsExample04"
-                  aria-controls="navbarsExample04"
-                  aria-expanded="false"
-                  aria-label="Toggle navigation"
-                >
-                  <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarsExample04">
-                  <ul class="navbar-nav mr-auto">
-                    <li class="nav-item active">
-                      <a class="nav-link" href="index.html">Home</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#About">About</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#services">Gallery</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#contact">Contact </a>
-                    </li>
-                    <!-- <div class="collapse navbar-collapse">
-                              <input type="Search">
-                              <button class="nav-link" href="">Search</button>
-                           </div> -->
-                  </ul>
-                </div>
-              </nav>
-            </div>
-            <div class="col-md-2">
-              <ul class="social_icon">
-                <li>
-                  <a class="face" href="#"
-                    ><i class="fa fa-facebook" aria-hidden="true"></i
-                  ></a>
-                </li>
-                <li>
-                  <a class="insta" href="#"
-                    ><i class="fa fa-instagram" aria-hidden="true"></i
-                  ></a>
-                </li>
-                <li>
-                  <a class="email" href="#"
-                    ><i class="fa-regular fa-envelope" aria-hidden="true"></i
-                  ></a>
-                </li>
-                <li>
-                  <a class="whatsapp" href="#"
-                    ><i class="fa-brands fa-whatsapp" aria-hidden="true"></i
-                  ></a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-    </header>
-    <!-- end header inner -->
-    <!-- end header -->
-    <!-- banner -->
-    <section class="banner_main">
-      <div id="myCarousel" class="carousel slide banner1" data-ride="carousel">
-        <ol class="carousel-indicators">
-          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-          <li data-target="#myCarousel" data-slide-to="1"></li>
-          <li data-target="#myCarousel" data-slide-to="2"></li>
-        </ol>
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <div class="container-fluid">
-              <div class="carousel-caption relative">
-                <div class="row d_flex">
-                  <div class="col-md-6">
-                    <img
-                      class="bann_img"
-                      src="new img/images/Silder/Silder1.jpeg"
-                      alt="#"
-                    />
-                  </div>
-                  <div class="col-md-6">
-                    <span>01/03</span>
-                    <h1>Elevate Your Bridal Beauty</h1>
-                    <p>
-                      “Our expert makeup artists use advanced techniques and
-                      high-quality products to ensure your makeup lasts all day
-                      and night. We specialize in flawless foundation
-                      application, contouring, highlighting, and eye makeup that
-                      enhances your features and complements your wedding
-                      dress.”
-                    </p>
-                    <a class="get_btn" href="contact.html" role="button"
-                      >Book now</a
-                    >
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <div class="container-fluid">
-              <div class="carousel-caption relative">
-                <div class="row d_flex">
-                  <div class="col-md-6">
-                    <img
-                      class="bann_img"
-                      src="new img/images/Silder/Silder2.jpg"
-                      alt="#"
-                    />
-                  </div>
-                  <div class="col-md-6">
-                    <span>02/03</span>
-                    <h1>Engagement Look</h1>
-                    <p>
-                      Explore personalized quizzes and virtual try-on tools to
-                      discover your ideal makeup match. From flawless foundation
-                      shades to the latest trends, get tailored recommendations
-                      just for you. Master new techniques with our step-by-step
-                      tutorials and expert advice. Share your makeup
-                      transformations, join exciting challenges, and get
-                      featured on our site. With high-quality reviews and
-                      stunning visuals, we're here to inspire and guide you to
-                      your unique, flawless look!
-                    </p>
-                    <a class="get_btn" href="contact.html" role="button"
-                      >Book now</a
-                    >
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <div class="container-fluid">
-              <div class="carousel-caption relative">
-                <div class="row d_flex">
-                  <div class="col-md-6">
-                    <img
-                      class="bann_img"
-                      src="new img/images/Silder/Silder3.jpeg"
-                      alt="#"
-                    />
-                  </div>
-                  <div class="col-md-6">
-                    <span>03/03</span>
-                    <h1>Professional Portfolio</h1>
-                    <p>
-                      “Discover the artistry and expertise behind my makeup
-                      creations. With years of experience in the beauty
-                      industry, I specialize in enhancing natural beauty through
-                      skillful makeup techniques. Explore my portfolio to see a
-                      selection of my work, from glamorous evening looks to
-                      everyday beauty enhancements.”
-                    </p>
-                    <a class="get_btn" href="contact.html" role="button"
-                      >Book now</a
-                    >
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <a
-            class="carousel-control-prev"
-            href="#myCarousel"
-            role="button"
-            data-slide="prev"
-          >
-            <i class="fa fa-long-arrow-left" aria-hidden="true"></i>
-            <span class="sr-only">Previous</span>
-          </a>
-          <a
-            class="carousel-control-next"
-            href="#myCarousel"
-            role="button"
-            data-slide="next"
-          >
-            <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
-            <span class="sr-only">Next</span>
-          </a>
-        </div>
-      </div>
-    </section>
-    <!-- end banner -->
-    <!-- about -->
-    <div class="about" id="About">
-      <div class="container">
-        <div class="row d_flex">
-          <div class="col-md-6">
-            <div class="titlepage">
-              <h2>About Us</h2>
-              <p>
-                <b>Suji Hair and Makeup</b> offers a range of services to
-                enhance your natural beauty for any occasion. From basic to HD,
-                matte, and dewy makeup, we cater to all needs including
-                engagement, reception, and pre-wedding looks. Whether it’s party
-                makeup, bridal makeup, or special events like baby showers and
-                puberty ceremonies, our expert team ensures you look stunning
-                and radiant. Let us help you shine on your special day!
-              </p>
-              <a class="read_more" href="about.html"> Read More</a>
-            </div>
-          </div>
-          <div class="col-md-6">
-            <div class="about_img">
-              <figure>
-                <img src="new img/images/About/About2.jpeg" alt="#" />
-              </figure>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- Services -->
-    <div class="experts" id="services">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-12 col-md-12">
-            <div class="titlepage">
-              <h2>Gallery</h2>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-lg-12 col-md-12 col-sm-12">
+      <div class="header ">
+         <div class="container-fluid">
             <div class="row">
-              <div class="col-lg-3 col-md-6 col-sm-8">
-                <div id="exp" class="experts_box">
-                  <div class="experts_img">
-                    <figure>
-                      <img src="new img/images/HD/HD1.jpg" alt="#" />
-                    </figure>
+               <div class="col-xl-3 col-lg-3  col-sm-3 col logo_section">
+                  <div class="full">
+                     <div class="center-desk">
+                        <div class="logo ">
+                           <div class="logoi">
+                              <img src="new img/images/Logo/Logo2.png" alt="" />
+                           </div>
+                           <div class="logoname">
+                              <h1>Suji Hair and Makeup</h1>
+                           </div>
+
+                        </div>
+                     </div>
                   </div>
-                  <div class="meet col-lg-12 col-md-12 col-sm-12">
-                    <h3>HD</h3>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-3 col-md-6 col-sm-8">
-                <div id="exp" class="experts_box">
-                  <div class="experts_img">
-                    <figure>
-                      <img
-                        src="new img/images/Hairstyle/Hairstyle1.jpg"
-                        alt="#"
-                      />
-                    </figure>
-                  </div>
-                  <div class="meet">
-                    <h3>HairStyle</h3>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-3 col-md-6 col-sm-8">
-                <div id="exp" class="experts_box">
-                  <div class="experts_img">
-                    <figure>
-                      <img
-                        src="new img/images/Babyshower/babyshower1.jpeg"
-                        alt="#"
-                      />
-                    </figure>
-                  </div>
-                  <div class="meet">
-                    <h3>babyshower</h3>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-3 col-md-6 col-sm-8">
-                <div id="exp" class="experts_box">
-                  <div class="experts_img">
-                    <figure>
-                      <img
-                        src="new img/images/Meganthi/meganthi1.jpeg"
-                        alt="#"
-                      />
-                    </figure>
-                  </div>
-                  <div class="meet">
-                    <h3>Mehanthi</h3>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-3 col-md-6 col-sm-8">
-                <div id="exp" class="experts_box">
-                  <div class="experts_img">
-                    <figure>
-                      <img
-                        src="new img/images/Floringmaking/floring making.jpeg"
-                        alt="#"
-                      />
-                    </figure>
-                  </div>
-                  <div class="meet">
-                    <h3>Floring Making</h3>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-3 col-md-6 col-sm-8">
-                <div id="exp" class="experts_box">
-                  <div class="experts_img">
-                    <figure>
-                      <img
-                        src="new img/images/Messybun/messy bun.jpeg"
-                        alt="#"
-                      />
-                    </figure>
-                  </div>
-                  <div class="meet">
-                    <h3>Bessy Bun</h3>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-3 col-md-6 col-sm-8">
-                <div id="exp" class="experts_box">
-                  <div class="experts_img">
-                    <figure>
-                      <img src="new img/images/HD/HD2.jpg" alt="#" />
-                    </figure>
-                  </div>
-                  <div class="meet">
-                    <h3>HD</h3>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-3 col-md-6 col-sm-8">
-                <div id="exp" class="experts_box">
-                  <div class="experts_img">
-                    <figure>
-                      <img
-                        src="new img/images/Hairstyle/Hairstyle2.jpg"
-                        alt="#"
-                      />
-                    </figure>
-                  </div>
-                  <div class="meet">
-                    <h3>HairStyle</h3>
-                  </div>
-                </div>
-              </div>
+               </div>
+               <div class="col-xl-7 col-lg-7 col-md-12 col-sm-9">
+                  <nav class="navigation navbar navbar-expand-md navbar-dark ">
+                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample04"
+                        aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                     </button>
+                     <div class="collapse navbar-collapse" id="navbarsExample04">
+                        <ul class="navbar-nav mr-auto">
+                           <li class="nav-item active">
+                              <a class="nav-link" href="index.html">Home</a>
+                           </li>
+                           <li class="nav-item">
+                              <a class="nav-link" href="#About">About</a>
+                           </li>
+                           <li class="nav-item">
+                              <a class="nav-link" href="#services">Gallery</a>
+                           </li>
+                           <li class="nav-item">
+                              <a class="nav-link" href="#contact">Contact </a>
+                           </li>
+                        </ul>
+                     </div>
+                  </nav>
+               </div>
+               <div class="col-md-2">
+                  <ul class="social_icon">
+                     <li><a class="face" href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                     <li><a class="insta" href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                     <li><a class="email" href="#"><i class="fa-regular fa-envelope" aria-hidden="true"></i></a></li>
+                     <li><a class="whatsapp" href="#"><i class="fa-brands fa-whatsapp" aria-hidden="true"></i></a></li>
+                  </ul>
+               </div>
             </div>
-            <div class="col-md-12 align-items-center">
-              <a class="read_more mar_top exper" href="services.html">More</a>
-            </div>
-          </div>
-        </div>
+         </div>
       </div>
-    </div>
-    <!-- end services -->
-    <!--  contact -->
-    <div class="contact" id="contact">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-            <div class="titlepage">
-              <h2>Get In Touch</h2>
+   </header>
+   <!-- end header inner -->
+   <!-- end header -->
+   <!-- banner -->
+   <section class="banner_main">
+      <div id="myCarousel" class="carousel slide banner1" data-ride="carousel">
+         <div class="carousel-inner">
+            <div class="carousel-item active">
+               <div class="container-fluid">
+                  <div class="carousel-caption relative">
+                     <div class="row d_flex">
+                        <div class="col-md-6">
+                           <img class="bann_img" src="new img/images/Silder/Silder1.jpeg" alt="#" />
+                        </div>
+                        <div class="col-md-6">
+                           <span>01/03</span>
+                           <h1>Elevate Your  Beauty </h1>
+                           <p>“Our expert makeup artists use advanced techniques and high-quality products to ensure
+                              your makeup lasts all day and night. We specialize in flawless foundation application,
+                              contouring, highlighting, and eye makeup that enhances your features and complements your
+                              wedding dress.”</p>
+                           <a class="get_btn" href="contact.html" role="button">Book now</a>
+                        </div>
+                     </div>
+                  </div>
+               </div>
             </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-6 offset-md-3">
-            <form
+            <div class="carousel-item">
+               <div class="container-fluid">
+                  <div class="carousel-caption relative">
+                     <div class="row d_flex">
+                        <div class="col-md-6">
+                           <img class="bann_img" src="new img/images/Silder/Silder2.jpg" alt="#" />
+                        </div>
+                        <div class="col-md-6">
+                           <span>02/03</span>
+                           <h1>Engagement Look</h1>
+                           <p>“Our expert makeup artists use advanced techniques and high-quality products to ensure
+                              your makeup lasts all day and night. We specialize in flawless foundation application,
+                              contouring, highlighting, and eye makeup that enhances your features and complements your
+                              wedding dress.”</p>
+                           <a class="get_btn" href="contact.html" role="button">Book now</a>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="carousel-item">
+               <div class="container-fluid">
+                  <div class="carousel-caption relative">
+                     <div class="row d_flex">
+                        <div class="col-md-6">
+                           <img class="bann_img" src="new img/images/Silder/Silder3.jpeg" alt="#" />
+                        </div>
+                        <div class="col-md-6">
+                           <span>03/03</span>
+                           <h1>Professional Portfolio</h1>
+                           <p>“Our expert makeup artists use advanced techniques and high-quality products to ensure
+                              your makeup lasts all day and night. We specialize in flawless foundation application,
+                              contouring, highlighting, and eye makeup that enhances your features and complements your
+                              wedding dress.”</p>
+                           <a class="get_btn" href="contact.html" role="button">Book now</a>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+               <i class="fa fa-long-arrow-left" aria-hidden="true"></i>
+               <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+               <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+               <span class="sr-only">Next</span>
+            </a>
+         </div>
+      </div>
+      </div>
+   </section>
+   <!-- end banner -->
+   <!-- about -->
+   <div class="about" id="About">
+      <div class="container">
+         <div class="row d_flex">
+            <div class="col-md-6">
+               <div class="titlepage">
+                  <h2 class="text-center">About Us</h2>
+                  <p><b>*Suji Hair and Makeup*</b>offers a range of services to enhance your natural beauty for any
+                     occasion. From basic to HD, matte, and dewy makeup, we cater to all needs including engagement,
+                     reception, and pre-wedding looks. Whether it’s party makeup, bridal makeup, or special events like
+                     baby showers and puberty ceremonies, our expert team ensures you look stunning and radiant. Let us
+                     help you shine on your special day!</p>
+                  <a class="read_more" href="about.html"> Read More</a>
+               </div>
+            </div>
+            <div class="col-md-6">
+               <div class="about_img">
+                  <figure><img src="new img/images/About/About2.jpeg" alt="#" /></figure>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+   <!-- Services -->
+   <div class="experts " id="services">
+      <div class="container">
+         <div class="row">
+            <div class="col-lg-12 col-md-12">
+               <div class="titlepage">
+                  <h2>Services</h2>
+               </div>
+            </div>
+         </div>
+         <div class="container-fluid services py-5">
+            <div class="container py-5">
+               <div class="row g-4">
+                  <div class="col-lg-6">
+                     <div class="services-item bg-light border-4 border-end border-primary rounded p-4">
+                        <div class="row align-items-center">
+                           <div class="col-8 ">
+                              <div class="services-content text-end">
+                                 <h3>Hd</h3>
+                                 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                                    Ipsum has been the industry's standard dummy</p>
+                              </div>
+                           </div>
+                           <div class="col-4">
+                              <div class="services-img d-flex align-items-center justify-content-center rounded">
+                                 <img src="./new img/images/HD/HD1.jpg" class="img-fluid rounded" alt="">
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-lg-6">
+                     <div class="services-item bg-light border-4 border-start border-primary rounded p-4">
+                        <div class="row align-items-center">
+                           <div class="col-4">
+                              <div class="services-img d-flex align-items-center justify-content-center rounded">
+                                 <img src="/new img/images/Babyshower/babyshower1.jpeg" class="img-fluid rounded"
+                                    alt="">
+                              </div>
+                           </div>
+                           <div class="col-8">
+                              <div class="services-content text-start">
+                                 <h3>Babyshower</h3>
+                                 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                                    Ipsum has been the industry's standard dummy</p>
+
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-lg-6">
+                     <div class="services-item bg-light border-4 border-end border-primary rounded p-4">
+                        <div class="row align-items-center">
+                           <div class="col-8">
+                              <div class="services-content text-end">
+                                 <h3>Hairstyle</h3>
+                                 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                                    Ipsum has been the industry's standard dummy</p>
+
+                              </div>
+                           </div>
+                           <div class="col-4">
+                              <div class="services-img d-flex align-items-center justify-content-center rounded">
+                                 <img src="/new img/images/Hairstyle/Hairstyle1.jpg" class="img-fluid rounded" alt="">
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-lg-6">
+                     <div class="services-item bg-light border-4 border-start border-primary rounded p-4">
+                        <div class="row align-items-center">
+                           <div class="col-4">
+                              <div class="services-img d-flex align-items-center justify-content-center rounded">
+                                 <img src="/new img/images/Messybun/messy bun.jpeg" class="img-fluid rounded" alt="">
+                              </div>
+                           </div>
+                           <div class="col-8">
+                              <div class="services-content text-start">
+                                 <h3>Messybun</h3>
+                                 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                                    Ipsum has been the industry's standard dummy</p>
+
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-lg-6">
+                     <div class="services-item bg-light border-4 border-end border-primary rounded p-4">
+                        <div class="row align-items-center">
+                           <div class="col-8">
+                              <div class="services-content text-end">
+                                 <h3>Engagement</h3>
+                                 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                                    Ipsum has been the industry's standard dummy</p>
+
+                              </div>
+                           </div>
+                           <div class="col-4">
+                              <div class="services-img d-flex align-items-center justify-content-center rounded">
+                                 <img src="/new img/images/HD/HD2.jpg" class="img-fluid rounded" alt="">
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-lg-6">
+                     <div class="services-item bg-light border-4 border-start border-primary rounded p-4">
+                        <div class="row align-items-center">
+                           <div class="col-4">
+                              <div class="services-img d-flex align-items-center justify-content-center rounded">
+                                 <img src="/new img/images/HD/HD7.jpeg" class="img-fluid rounded" alt="">
+                              </div>
+                           </div>
+                           <div class="col-8">
+                              <div class="services-content text-start">
+                                 <h3>eyebro</h3>
+                                 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                                    Ipsum has been the industry's standard dummy</p>
+
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-lg-6">
+                     <div class="services-item bg-light border-4 border-end border-primary rounded p-4">
+                        <div class="row align-items-center">
+                           <div class="col-8">
+                              <div class="services-content text-end">
+                                 <h3>bridel</h3>
+                                 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                                    Ipsum has been the industry's standard dummy</p>
+
+                              </div>
+                           </div>
+                           <div class="col-4">
+                              <div class="services-img d-flex align-items-center justify-content-center rounded">
+                                 <img src="/new img/images/HD/HD2.jpg" class="img-fluid rounded" alt="">
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-lg-6">
+                     <div class="services-item bg-light border-4 border-start border-primary rounded p-4">
+                        <div class="row align-items-center">
+                           <div class="col-4">
+                              <div class="services-img d-flex align-items-center justify-content-center rounded">
+                                 <img src="/new img/images/HD/HD2.jpg" class="img-fluid rounded" alt="">
+                              </div>
+                           </div>
+                           <div class="col-8">
+                              <div class="services-content text-start">
+                                 <h3>aaaaaaaa</h3>
+                                 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                                    Ipsum has been the industry's standard dummy</p>
+
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-lg-6">
+                     <div class="services-item bg-light border-4 border-end border-primary rounded p-4">
+                        <div class="row align-items-center">
+                           <div class="col-8">
+                              <div class="services-content text-end">
+                                 <h3>bridel</h3>
+                                 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                                    Ipsum has been the industry's standard dummy</p>
+
+                              </div>
+                           </div>
+                           <div class="col-4">
+                              <div class="services-img d-flex align-items-center justify-content-center rounded">
+                                 <img src="/new img/images/HD/HD2.jpg" class="img-fluid rounded" alt="">
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-lg-6">
+                     <div class="services-item bg-light border-4 border-start border-primary rounded p-4">
+                        <div class="row align-items-center">
+                           <div class="col-4">
+                              <div class="services-img d-flex align-items-center justify-content-center rounded">
+                                 <img src="/new img/images/HD/HD2.jpg" class="img-fluid rounded" alt="">
+                              </div>
+                           </div>
+                           <div class="col-8">
+                              <div class="services-content text-start">
+                                 <h3>aaaaaaaa</h3>
+                                 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                                    Ipsum has been the industry's standard dummy</p>
+
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-lg-6">
+                     <div class="services-item bg-light border-4 border-end border-primary rounded p-4">
+                        <div class="row align-items-center">
+                           <div class="col-8">
+                              <div class="services-content text-end">
+                                 <h3>bridel</h3>
+                                 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                                    Ipsum has been the industry's standard dummy</p>
+
+                              </div>
+                           </div>
+                           <div class="col-4">
+                              <div class="services-img d-flex align-items-center justify-content-center rounded">
+                                 <img src="/new img/images/HD/HD2.jpg" class="img-fluid rounded" alt="">
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-lg-6">
+                     <div class="services-item bg-light border-4 border-start border-primary rounded p-4">
+                        <div class="row align-items-center">
+                           <div class="col-4">
+                              <div class="services-img d-flex align-items-center justify-content-center rounded">
+                                 <img src="/new img/images/HD/HD2.jpg" class="img-fluid rounded" alt="">
+                              </div>
+                           </div>
+                           <div class="col-8">
+                              <div class="services-content text-start">
+                                 <h3>aaaaaaaa</h3>
+                                 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                                    Ipsum has been the industry's standard dummy</p>
+
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-12">
+                     <div class="services-btn text-center">
+                        <a href="#" class="btn btn-primary btn-primary-outline-0 rounded-pill py-3 px-5">Service
+                           More</a>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      <!-- <div class="experts ">
+      <div class="container">
+         <div class="row">
+            <div class="col-lg-12 col-md-12">
+               <div class="titlepage">
+                  <h2>Gallery</h2>
+               </div>
+            </div>
+         </div>
+         <div class="row">
+            <div class="col-lg-12  col-md-12 col-sm-12 ">
+               <div class="row">
+                  <div class="col-lg-3   col-md-6 col-sm-8">
+                     <div id="exp" class="experts_box">
+                        <div class="experts_img">
+                           <figure><img src="new img/images/HD/HD1.jpg" alt="#" /></figure>
+                        </div>
+                        <div class="meet col-lg-12  col-md-12 col-sm-12">
+                           <h3>HD</h3>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-lg-3   col-md-6 col-sm-8">
+                     <div id="exp" class="experts_box">
+                        <div class="experts_img">
+                           <figure><img src="new img/images/Hairstyle/Hairstyle1.jpg" alt="#" /></figure>
+                        </div>
+                        <div class="meet">
+                           <h3>HairStyle</h3>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-lg-3   col-md-6 col-sm-8">
+                     <div id="exp" class="experts_box">
+                        <div class="experts_img">
+                           <figure><img src="new img/images/Babyshower/babyshower1.jpeg" alt="#" /></figure>
+                        </div>
+                        <div class="meet">
+                           <h3>babyshower</h3>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-lg-3   col-md-6 col-sm-8">
+                     <div id="exp" class="experts_box">
+                        <div class="experts_img">
+                           <figure><img src="new img/images/Meganthi/meganthi1.jpeg" alt="#" /></figure>
+                        </div>
+                        <div class="meet">
+                           <h3>Mehanthi</h3>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-lg-3   col-md-6 col-sm-8">
+                     <div id="exp" class="experts_box">
+                        <div class="experts_img">
+                           <figure><img src="new img/images/Floringmaking/floring making.jpeg" alt="#" /></figure>
+                        </div>
+                        <div class="meet">
+                           <h3>Floring Making</h3>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-lg-3   col-md-6 col-sm-8">
+                     <div id="exp" class="experts_box">
+                        <div class="experts_img">
+                           <figure><img src="new img/images/Messybun/messy bun.jpeg" alt="#" /></figure>
+                        </div>
+                        <div class="meet">
+                           <h3>Bessy Bun</h3>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-lg-3   col-md-6 col-sm-8">
+                     <div id="exp" class="experts_box">
+                        <div class="experts_img">
+                           <figure><img src="new img/images/HD/HD2.jpg" alt="#" /></figure>
+                        </div>
+                        <div class="meet">
+                           <h3>HD</h3>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-lg-3   col-md-6 col-sm-8">
+                     <div id="exp" class="experts_box">
+                        <div class="experts_img">
+                           <figure><img src="new img/images/Hairstyle/Hairstyle2.jpg" alt="#" /></figure>
+                        </div>
+                        <div class="meet">
+                           <h3>HairStyle</h3>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-md-12 align-items-center">
+                  <a class="read_more mar_top exper" href="services.html"> More</a>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+   </div> -->
+      <!-- end services -->
+      <!--  contact -->
+      <div class="contact">
+         <div class="container">
+            <div class="row servicerow">
+               <div class="col-md-12">
+                  <div class="titlepage">
+                     <h2>Get In Touch</h2>
+                  </div>
+               </div>
+            </div>
+            <div class="row">
+               <div class="col-md-6 offset-md-3">
+                <form
               action="https://api.web3forms.com/submit"
               method="POST"
               id="request"
@@ -513,69 +656,59 @@
                 </div>
               </div>
             </form>
-          </div>
-        </div>
+              
+               </div>
+            </div>
+         </div>
+         <div class="container-fluid">
+            <div class="row">
+               <div class="col-md-12">
+                  <div class="map_main">
+                     <div class="map-responsive">
+                        <iframe
+                           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3887.8860043774407!2d80.24831207412045!3d12.979142314714828!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a5267e97184b4a1%3A0x2717348945c82ffa!2sKritiLabs%20Technologies!5e0!3m2!1sen!2sin!4v1717845502881!5m2!1sen!2sin"
+                           width="600" height="386" frameborder="0" style="border:0; width: 100%;"
+                           allowfullscreen=""></iframe>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
       </div>
-      <div class="container-fluid">
-        <div class="row">
-          <div class="col-md-12">
-            <div class="map_main">
-              <div class="map-responsive">
-                <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3887.8860043774407!2d80.24831207412045!3d12.979142314714828!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a5267e97184b4a1%3A0x2717348945c82ffa!2sKritiLabs%20Technologies!5e0!3m2!1sen!2sin!4v1717845502881!5m2!1sen!2sin"
-                  width="600"
-                  height="386"
-                  frameborder="0"
-                  style="border: 0; width: 100%"
-                  allowfullscreen=""
-                ></iframe>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- end contact -->
-    <!--  footer -->
-    <footer>
-      <div class="footer">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-12">
-              <ul class="conta">
-                <li>
-                  <i class="fa fa-map-marker" aria-hidden="true"></i>Suji Hair
-                  and Makeup
-                </li>
-                <li>
-                  <i class="fa fa-phone" aria-hidden="true"></i> Call :
-                  +70929395867
-                </li>
-                <li>
-                  <i class="fa fa-envelope" aria-hidden="true"></i
-                  ><a href="#">sujihairandmakeup@gmail.com</a>
-                </li>
-              </ul>
-            </div>
-            <div class="col-md-6 col-sm-6">
-              <h3>About</h3>
-              <p class="variat">
-                <b> Suji Hair and Makeup</b> Enhances your natural beauty with
-                services ranging from basic to HD, matte, and dewy makeup.
-                Whether for engagements, parties, or special events, our expert
-                team ensures you look stunning and radiant.
-              </p>
-            </div>
-            <div class="col-md-2 col-sm-6">
-              <h3>Useful Link</h3>
-              <ul class="link_menu">
-                <li class="active"><a href="index.html">Home</a></li>
-                <li><a href="about.html"> About</a></li>
-                <li><a href="services.html">Gallery</a></li>
-                <li><a href="contact.html">Contact Us</a></li>
-              </ul>
-            </div>
-            <!-- <div class="col-md-4 col-sm-6">
+      <!-- end contact -->
+      <!--  footer -->
+      <footer>
+         <div class="footer">
+            <div class="container">
+               <div class="row">
+                  <div class="col-md-12">
+                     <ul class="conta">
+                        <li><i class="fa fa-map-marker" aria-hidden="true"></i>Suji Hair and Makeup</li>
+                        <li><i class="fa fa-phone" aria-hidden="true"></i> Call : +70929395867</li>
+                        <li> <i class="fa fa-envelope" aria-hidden="true"></i><a
+                              href="#">sujihairandmakeup@gmail.com</a>
+                        </li>
+                     </ul>
+                  </div>
+                  <div class=" col-md-6 col-sm-6">
+                     <h3>About </h3>
+                     <p class="variat">
+                        <b> Suji Hair and Makeup</b> Enhances your natural beauty with services ranging from basic to
+                        HD,
+                        matte, and dewy makeup. Whether for engagements, parties, or special events, our expert team
+                        ensures you look stunning and radiant.
+                     </p>
+                  </div>
+                  <div class="col-md-2 col-sm-6">
+                     <h3>Useful Link</h3>
+                     <ul class="link_menu">
+                        <li class="active"><a href="index.html">Home</a></li>
+                        <li><a href="about.html"> About</a></li>
+                        <li><a href="services.html">Gallery</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                     </ul>
+                  </div>
+                  <!-- <div class="col-md-4 col-sm-6">
                   <h3>Subscribe</h3>
                   <form class="bottom_form">
                      <a class="right_btn" href="Javascript:void(0)"> <i class="fa fa-long-arrow-right"
@@ -583,69 +716,44 @@
                      <input class="enter" placeholder="Enter your email" type="text" name="Enter your email">
                   </form>
                </div> -->
-          </div>
-        </div>
-        <div class="copyright">
-          <div class="container">
-            <div class="row">
-              <div class="col-md-10 offset-md-1">
-                <p>© 2024 All Rights Reserved. Design by Naveen G</p>
-              </div>
+               </div>
             </div>
-          </div>
-        </div>
-      </div>
-    </footer>
-    <!-- end footer -->
-    <!-- Javascript files-->
-    <script>
-      function sendMail() {
-        emailjs.init("ZyL32yxaIoRjdVqPJ");
+            <div class="copyright">
+               <div class="container">
+                  <div class="row">
+                     <div class="col-md-10 offset-md-1">
+                        <p>© 2024 All Rights Reserved. Design by Naveen G</p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </footer>
+      <!-- end footer -->
+      <!-- Javascript files-->
+      <script>
+        function sendMail() {
+    emailjs.init("ZyL32yxaIoRjdVqPJ");
 
-        var params = {
-          to: document.querySelector("#to").value,
-        };
+    var params = {
+      to: document.querySelector("#to").value,
+    };
 
-        var serviceID = "service_eozsh7d"; //email service id
-        var templateID = "template_znxkf1m";
+    var serviceID = "service_eozsh7d"; //email service id
+    var templateID = "template_znxkf1m";
 
-        emailjs.send("service_eozsh7d", "template_znxkf1m", {
-          to: document.querySelector("#to").value,
-        });
-      }
-      document.addEventListener("DOMContentLoaded", function () {
-        var originalTitle = document.title; // Store the original title
+    emailjs.send("service_eozsh7d", "template_znxkf1m", {
+      to: document.querySelector("#to").value,
+    });
+  }
+      </script>
+      <script src="js/jquery.min.js"></script>
+      <script src="js/backend.js"></script>
+      <script src="js/bootstrap.bundle.min.js"></script>
+      <script src="js/jquery-3.0.0.min.js"></script>
+      <!-- sidebar -->
+      <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+      <script src="js/custom.js"></script>
+</body>
 
-        function changeTitle(newTitle) {
-          document.title = newTitle; // Change the title
-          setTimeout(function () {
-            document.title = originalTitle; // Revert back to the original title after 3 seconds
-          }, 3000);
-        }
-
-        document.addEventListener("keydown", function (event) {
-          // Detect print screen key (PrtScn) press
-          if (event.key === "PrintScreen") {
-            changeTitle("Restricted Page");
-            alert("Screenshots are not allowed on this page.");
-
-            event.preventDefault(); // Prevent default action
-          }
-        });
-
-        document.addEventListener("contextmenu", function (event) {
-          // Detect right-click context menu
-          event.preventDefault();
-          changeTitle("Restricted Page"); // Prevent context menu from opening
-          alert("Right-click context menu is disabled on this page.");
-        });
-      });
-    </script>
-    <script src="js/jquery.min.js"></script>
-    <script src="js/bootstrap.bundle.min.js"></script>
-    <script src="js/jquery-3.0.0.min.js"></script>
-    <!-- sidebar -->
-    <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
-    <script src="js/custom.js"></script>
-  </body>
 </html>
