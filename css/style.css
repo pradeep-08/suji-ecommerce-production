@@ -266,6 +266,8 @@ button {
   height: 80px;
   padding: 24px;
   background:#c4c4e5;
+  position: fixed;
+  z-index: 2;
 }
 body{
   background: #E6E6FA;
