@@ -321,8 +321,10 @@
     }
 
     .navigation.navbar-dark .navbar-toggler-icon {
-        background: url(../images/menu_icon.png);
-        background-repeat: no-repeat;
+        /* background: url(../images/menu_icon.png);
+        background-repeat: no-repeat; */
+        background-color: #393939;
+        padding: 10px;
     }
 
     .d_none {
