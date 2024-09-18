@@ -149,7 +149,7 @@
 
   #myCarousel .carousel-control-prev,
   #myCarousel .carousel-control-next {
-    top: 94%;
+    top: 50%;
   }
 
   .about_img {
@@ -439,13 +439,13 @@
   #myCarousel .carousel-control-prev {
     left: inherit;
     right: 100px;
-    top: 613px;
+    top: 750px;
   }
 
   #myCarousel .carousel-control-next {
     left: inherit;
     right: 0px !important;
-    top: 613px;
+    top: 750px;
   }
 
   .relative {
