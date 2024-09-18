@@ -303,7 +303,7 @@
     .navigation.navbar-dark .navbar-toggler {
         float: right;
         border: inherit;
-        margin-top: -42px;
+        margin-top: -12px;
     }
 
     .navigation.navbar-dark .navbar-nav .nav-link:focus,
@@ -352,12 +352,12 @@
     #myCarousel .carousel-control-prev {
         left: inherit;
         right: 100px;
-        top: 490px;
+        top: 380px;
     }
 
     #myCarousel .carousel-control-next {
         left: inherit;
-        top: 490px;
+        top: 380px;
     }
 
 }
