@@ -92,6 +92,7 @@
   #myCarousel .carousel-control-prev,
   #myCarousel .carousel-control-next {
     top: 84%;
+    display: none;
   }
 
   .we_box i {
@@ -150,6 +151,7 @@
   #myCarousel .carousel-control-prev,
   #myCarousel .carousel-control-next {
     top: 50%;
+    display: none;
   }
 
   .about_img {
@@ -392,6 +394,7 @@
     left: inherit;
     right: 100px;
     top: 594px;
+    display: none;
   }
 
   #myCarousel .carousel-control-next {
@@ -446,6 +449,7 @@
     left: inherit;
     right: 0px !important;
     top: 750px;
+    display: none;
   }
 
   .relative {
@@ -506,6 +510,7 @@
     left: inherit;
     right: 0px;
     top: 645px;
+    display: none;
   }
 
   .relative {
@@ -536,6 +541,7 @@
   #myCarousel .carousel-control-next {
     width: 38px;
     height: 38px;
+    display: none;
   }
   .get_btn {
     width: 38%;
