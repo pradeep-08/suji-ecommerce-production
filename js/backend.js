@@ -27,15 +27,25 @@
     // });
   });
 
-  document.addEventListener('DOMContentLoaded', function() {
-    const toggler = document.querySelector('.navbar-toggler');
-    const collapse = document.querySelector('#navbarNav');
+//   document.addEventListener('DOMContentLoaded', function() {
+//     const toggler = document.querySelector('.navbar-toggler');
+//     const collapse = document.querySelector('#navbarNav');
 
-    toggler.addEventListener('click', function() {
-        if (collapse.classList.contains('show')) {
-            toggler.classList.add('collapsed');
-        } else {
-            toggler.classList.remove('collapsed');
-        }
+//     toggler.addEventListener('click', function() {
+//         if (collapse.classList.contains('show')) {
+//             toggler.classList.add('collapsed');
+//         } else {
+//             toggler.classList.remove('collapsed');
+//         }
+//     });
+// });
+
+
+const navLinks = document.querySelectorAll('.navbar-toggler');
+const navbar = document.querySelector('.navbar');
+
+navLinks.forEach(link => {
+    link.addEventListener('click', () => {
+        navbar.classList.remove('open'); // Adjust class based on your setup
     });
 });
