@@ -82,6 +82,7 @@
     #myCarousel .carousel-control-prev,
     #myCarousel .carousel-control-next {
         top: 84%;
+        display: none;
     }
 
     .we_box i {
@@ -134,6 +135,7 @@
     #myCarousel .carousel-control-prev,
     #myCarousel .carousel-control-next {
         top: 94%;
+        display: none;
     }
 
     .about_img {
@@ -352,11 +354,13 @@
         left: inherit;
         right: 100px;
         top: 490px;
+        display: none;
     }
 
     #myCarousel .carousel-control-next {
         left: inherit;
         top: 490px;
+        display: none;
     }
 
 }
